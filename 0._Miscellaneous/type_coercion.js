@@ -9,3 +9,13 @@ console.log(newTotal);
 //her bruger vi 3 lighedstegn, hvis det er samme type
 const balanceEquals = total === newTotal;
 console.log(balanceEquals);
+
+const cat = {
+    key: "value",
+    name: "Tom"
+};
+
+//square-bracket notation
+console.log(cat["name"]);
+//et andet navn notation. at foretrække:
+console.log(cat.name);
