@@ -11,12 +11,11 @@ app.get("/weapons", (req, res) => {
 app.get("/weapons/:id", (req, res) => {
     console.log(req.params.id);
     if (Number(req.params.id) === 1) {
-        res.send({name: "Gun", isAWeapon: true});
+        res.send({name: "Zweihander", isCool: true});
     } else {
-        res.send({ errorMessage: "I don't know that deer" })
+        res.send({ errorMessage: "I don't know that weapon" })
     }
 });
-
 
 app.listen(8080);
 
