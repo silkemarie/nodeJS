@@ -71,9 +71,14 @@ console.log(diet);
 
 // You really like your daily diet from last exercise. Copy it to a new array called dinnerTray so you can give it to a friend.  
 
-const dinnerTray = diet;
+// const dinnerTray = diet;
+//^er ikke en kopi, fordi referer til det samme
+
+const dinnerTray = [...diet];
+//^spread operator. Tager indholdet ud og putter det ind i en ny datastruktur. Skaber en kopi. 
 
 console.log(dinnerTray);
+
 
 // --------------------------------------
 // Exercise 7 - For loop
