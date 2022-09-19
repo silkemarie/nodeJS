@@ -18,11 +18,13 @@ app.get("/weapons", (req, res) => {
 
 //Get by ID / Read / GET
 app.get("/weapons/:id", (req, res) => {
-    const weapon = weapons.find(w => w.id === parseInt(req.params.id));
-    if (!weapon)
+    const foundWeapon = weapons.find(weapon => weapon.id === Number(req.params.id));
+    if (!foundWeapon)
         return res.send({ errorMessage: "I don't know that weapon"})
-    res.send({ data: weapon});
+    res.send({ data: foundWeapon});
 })
+//^Number er her at foretrække fremfor parseInt, fordi parseInt forsøger at returnere et nummer,
+//imens Number returerer Nan, hvis ikke den kan returnere et number
 
 //Create / POST
 app.post("/weapons", (req, res) => {
@@ -37,7 +39,7 @@ app.post("/weapons", (req, res) => {
 
 //Update / PUT
 app.put("/weapons/:id", (req, res) => {
-    const weapon = weapons.find(w => w.id === parseInt(req.params.id));
+    const weapon = weapons.find(weapon => weapon.id === Number(req.params.id));
     if (!weapon) 
         return res.send({ errorMessage: "I don't know that weapon"})
     
@@ -49,7 +51,7 @@ app.put("/weapons/:id", (req, res) => {
 
 //Delete / DELETE
 app.delete("/weapons/:id", (req, res) => {
-    const weapon = weapons.find(w => w.id === parseInt(req.params.id));
+    const weapon = weapons.find(weapon => weapon.id === Number(req.params.id));
     
     if (!weapon) 
         return res.send({ errorMessage: "I don't know that weapon"})
