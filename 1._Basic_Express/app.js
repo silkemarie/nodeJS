@@ -4,6 +4,8 @@ const express = require("express");
 //instantierer the library express
 const app = express();
 
+app.use(express.json());
+
 //another way to import in a single line:
 //const app = require("express")();
 
@@ -35,6 +37,8 @@ app.get("/deers/:id", (req, res) => {
     }
 });
 
+// --------------- ACTORS -------------------------
+
 app.get("/actors", (req, res) => {
     console.log(req.query.name);
     res.send({
@@ -43,11 +47,38 @@ app.get("/actors", (req, res) => {
     });
 })
 
+app.get("/actors", (req, res) => {
+    console.log(req.body);
+    res.send({ data: req.body});
+})
+
+// ----------------- DATO OPGAVE -------------------
+
+app.get("/date", (req, res) => {
+    let dato = new Date();
+    res.send(dato);
+})
+
+
+//amerikansk uge starter søndag 
+const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+console.log(days[new Date().getDay()]);
+
+//console.log(new Date().getMonth());
+
+/*
+console.log(new Date());
+console.log(new Date().toLocaleString);
+*/
+
 //GET tager imod to ting.
 //1: Endpointet
 //2: ??
 
 //json er en standard, derfor er det json vi vil sende i linje 5
+
+
+
 
 app.listen(8080, () => {
     console.log("Server is running on port", 8080);

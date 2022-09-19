@@ -19,5 +19,8 @@ app.get("/weapons/:id", (req, res) => {
 
 
 
+
+//put, patch, delete + ids
+
 app.listen(8080);
 
