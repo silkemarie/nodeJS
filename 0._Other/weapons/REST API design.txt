@@ -1,7 +1,0 @@
-HTTP Method	Endpoint	Description
-GET	/weapons	Returns all weapons
-GET	/weapons/{id}	Returns a weapon by id
-POST	/weapons	Create a weapon
-PUT	/weapons/{id}	Update the entire weapon resource by an id
-PATCH	/weapons/{id}	Update parts of the weapon resource by an id
-DELETE	/weapons/{id}	Removes a weapon by id
