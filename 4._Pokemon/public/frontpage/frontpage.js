@@ -8,11 +8,12 @@ fetch("/pokemon")
 //const pokemonDiv = document.querySelector("#pokemon");
 //^løber igennem flere træer, hvor Id kun løber igennem id-træet
 
+/*
 setTimeout(function(){
-    window.location.href = "/battle";
-    //window.location.replace = "battle";
+    //window.location.href = "/battle";
+    window.location.replace = "battle";
  }, 3000);
-
+*/
 
 const pokemonDiv = document.getElementById("pokemon");
 

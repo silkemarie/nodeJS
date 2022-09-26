@@ -12,7 +12,7 @@ let pokemon = [
 ];
 
 app.get("/", (req, res) => {
-    res.sendFile(path.resolve("public/frontpage.html"));
+    res.sendFile(path.resolve("public/frontpage/frontpage.html"));
 });
 
 /*
@@ -21,6 +21,12 @@ app.get("/pokemon", (req, res) => {
 });
 //når vi skriver {data:} her, sender vi json tilbage 
 */
+
+app.get("/battle", (req, res) => {
+    res.sendFile(path.resolve("public/battle/battle.html"));
+});
+//sendFile forventer en absolute path, resolve hjælper.
+
 
 app.get("/pokemon", (req, res) => {
     fetch("https://pokeapi.co/api/v2/pokemon")
