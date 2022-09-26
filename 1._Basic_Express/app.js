@@ -52,6 +52,20 @@ app.get("/actors", (req, res) => {
     res.send({ data: req.body});
 })
 
+// ----------------- MONSTERS OPGAVE -------------------
+
+app.get("/lookunderbed", (req, res) => {
+     if (req.query.flashlight) {
+        res.send({ message: "You are safe" });
+    }
+    res.redirect("/monsters");
+});
+
+app.get("/monsters", (req, res) => {
+    res.send({ message: "Uh oh! Scary monsters!!" });
+});
+
+
 // ----------------- DATO OPGAVE -------------------
 
 app.get("/date", (req, res) => {
