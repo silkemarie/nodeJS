@@ -3,16 +3,34 @@ const app = express();
 
 app.use(express.static("public"));
 
-import path from "path";
+import pokemonRouter from ".routers/pokemonRouter.js";
+app.use(pokemonRouter);
 
-let pokemon = [
+import { renderPage, injectData } from "./util/templateEngine.js";
+
+const frontpagePage = renderPage("/frontpage/frontpage.html", 
+{ 
+    tabTitle: "Pokemon", 
+    cssLink: `<link rel="stylesheet" href="/pages/frontpage/frontpage.css">` 
+});
+
+const contactPage = renderPage("/contact/contact.html");
+
+const battlePage = renderPage("/battle/battle.html", {
+    cssLink: `<link rel="stylesheet" href="/pages/battle/battle.css">` 
+});
+
+//import path from "path";
+/*let pokemon = [
     { id: 1, name: "Charmander"},
     { id: 2, name: "Charmeleon"},
     { id: 3, name: "Charizard"}
 ];
+*/
 
 app.get("/", (req, res) => {
-    res.sendFile(path.resolve("public/frontpage/frontpage.html"));
+    //res.sendFile(path.resolve("public/pages/frontpage/frontpage.html"));
+    res.send(frontpagePage);
 });
 
 /*
@@ -22,17 +40,29 @@ app.get("/pokemon", (req, res) => {
 //når vi skriver {data:} her, sender vi json tilbage 
 */
 
-app.get("/battle", (req, res) => {
-    res.sendFile(path.resolve("public/battle/battle.html"));
+const randomPokemon = ["pikachu", "slowpoke", "ditto"];
+app.get("/battle", (req, res) => {   
+    res.redirect(`battle/${randomPokemon[Math.floor(Math.random() * randomPokemon.length)]}`);
 });
-//sendFile forventer en absolute path, resolve hjælper.
 
+app.get("/battle/:pokemonName", (req, res) => {
+    const pokemonName = req.params.pokemonName;
+    //const battlePageWithData = injectData(battlePage, { pokemonName });
+    res.send(battlePageWithData.replace("%%TAB_TITLE%%", `Battle ${req.params.pokemonName}`));
+});
 
-app.get("/pokemon", (req, res) => {
+app.get("/contact", (req, res) => {
+    //res.sendFile(path.resolve("public/contact/contact.html"));
+    res.send(contactPage.replace("%%TAB_TITLE%%", `Contact`))
+});
+
+/*
+app.get("/api/pokemon", (req, res) => {
     fetch("https://pokeapi.co/api/v2/pokemon")
     .then(response => response.json())
     .then(result => res.send({ data: result }));
 });
+*/
 
 
 /* Virker med frontend: 
@@ -59,3 +89,7 @@ const server = app.listen(process.env.PORT, (error) => {
     }
     console.log("Server is running on", server.address().port);
 });
+
+function addA(someString) {
+    return someString + "A";
+}

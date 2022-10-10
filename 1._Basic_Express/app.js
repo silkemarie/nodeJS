@@ -57,9 +57,11 @@ app.get("/actors", (req, res) => {
 app.get("/lookunderbed", (req, res) => {
      if (req.query.flashlight) {
         res.send({ message: "You are safe" });
+    } else {
+        res.redirect("/monsters");
     }
-    res.redirect("/monsters");
 });
+//http://localhost:8080/lookunderbed?flashlight=true 
 
 app.get("/monsters", (req, res) => {
     res.send({ message: "Uh oh! Scary monsters!!" });
