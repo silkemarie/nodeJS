@@ -1,0 +1,6 @@
+1) læs krav
+2) login funktion? hardcoded?
+3) renskriv noter
+4) læg noter op til de tilsvarende sider
+5) kommentar? noget med at tilføje noget? 
+6) uddyb emner i menuen på forsiden i stedet for something something 
