@@ -1,9 +1,16 @@
-<!-- OPGAVE TIL D. 23. OKTOBER -->
-<!-- se: 2.- 6.svelte for løsningerne til opgaver fra https://svelte.dev/tutorial/basics  -->
-<!-- 1 -->
-
 <script>
-	let name = 'world';
+    import Date from "./components/Date.svelte";
+
+  const name = "Silke";
 </script>
 
-<h1>Hello {name.toUpperCase()}!</h1>
+<h2 id="page-title">Hello</h2>
+<div>more content for {name}.</div>
+<Date></Date>
+
+
+<style>
+  #page-title {
+    color: pink;
+  }
+</style>
