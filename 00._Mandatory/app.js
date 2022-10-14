@@ -21,13 +21,14 @@ const ses1Page = renderPage("/session/ses.html",
 
 //to do: lav tabtitle interactiv 
 
-    /*
-const ses2Page = renderPage("/ses1/ses.html",
+    
+const ses2Page = renderPage("/ses2/ses2.html",
     {
         tabTitle: "Session 2",
         cssLink: `<link rel="stylesheet" href="/pages/main.css">`
     });
 
+    /*
 const ses3Page = renderPage("/ses3/ses3.html",
     {
         tabTitle: "Session 3",
@@ -70,11 +71,12 @@ app.get("/ses1", (req, res) => {
     res.send(ses1Page);
 });
 
-/*
+
 app.get("/ses2", (req, res) => {
     res.send(ses2Page);
 });
 
+/*
 app.get("/ses3", (req, res) => {
     res.send(ses3Page);
 });
