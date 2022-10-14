@@ -73,4 +73,40 @@ weekRouter.get("/ses/:id", (req, res) => {
         { subEntriesId: 3, subTitle: "Subtitle 3", text: "text for subtitle 3" },
       ],
     },
+    {
+      weeksId: 4,
+      title: "Week 4",
+      subEntries: [
+        { subEntriesId: 1, subTitle: "Subtitle 1", text: "text3 for subtitle 1" },
+        { subEntriesId: 2, subTitle: "Subtitle 2", text: "text for subtitle 2" },
+        { subEntriesId: 3, subTitle: "Subtitle 3", text: "text for subtitle 3" },
+      ],
+    },
+    {
+      weeksId: 5,
+      title: "Week 5",
+      subEntries: [
+        { subEntriesId: 1, subTitle: "Subtitle 1", text: "text3 for subtitle 1" },
+        { subEntriesId: 2, subTitle: "Subtitle 2", text: "text for subtitle 2" },
+        { subEntriesId: 3, subTitle: "Subtitle 3", text: "text for subtitle 3" },
+      ],
+    },
+    {
+      weeksId: 6,
+      title: "Week 6",
+      subEntries: [
+        { subEntriesId: 1, subTitle: "Subtitle 1", text: "text3 for subtitle 1" },
+        { subEntriesId: 2, subTitle: "Subtitle 2", text: "text for subtitle 2" },
+        { subEntriesId: 3, subTitle: "Subtitle 3", text: "text for subtitle 3" },
+      ],
+    },
+    {
+      weeksId: 7,
+      title: "Week 7",
+      subEntries: [
+        { subEntriesId: 1, subTitle: "Subtitle 1", text: "text3 for subtitle 1" },
+        { subEntriesId: 2, subTitle: "Subtitle 2", text: "text for subtitle 2" },
+        { subEntriesId: 3, subTitle: "Subtitle 3", text: "text for subtitle 3" },
+      ],
+    },
   ];

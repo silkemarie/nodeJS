@@ -13,7 +13,7 @@ const frontpagePage = renderPage("/frontpage/frontpage.html",
         cssLink: `<link rel="stylesheet" href="/pages/main.css">`
     });
 
-const ses1Page = renderPage("/session/ses.html",
+const ses1Page = renderPage("/ses1/ses.html",
     {
         tabTitle: "Session 1",
         cssLink: `<link rel="stylesheet" href="/pages/main.css">`
@@ -28,7 +28,7 @@ const ses2Page = renderPage("/ses2/ses2.html",
         cssLink: `<link rel="stylesheet" href="/pages/main.css">`
     });
 
-    /*
+    
 const ses3Page = renderPage("/ses3/ses3.html",
     {
         tabTitle: "Session 3",
@@ -61,7 +61,7 @@ const ses7Page = renderPage("/ses7/ses7.html",
         cssLink: `<link rel="stylesheet" href="/pages/main.css">`
     });
 
-    */
+    
 
 app.get("/", (req, res) => {
     res.send(frontpagePage);
@@ -76,7 +76,7 @@ app.get("/ses2", (req, res) => {
     res.send(ses2Page);
 });
 
-/*
+
 app.get("/ses3", (req, res) => {
     res.send(ses3Page);
 });
@@ -96,7 +96,7 @@ app.get("/ses6", (req, res) => {
 app.get("/ses7", (req, res) => {
     res.send(ses7Page);
 });
-*/
+
 
 //const PORT = process.env.PORT || 8080;
 //console.log(Number(process.env.PORT));
