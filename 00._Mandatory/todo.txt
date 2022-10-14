@@ -1,6 +1,31 @@
-1) læs krav
-2) login funktion? hardcoded?
+1) læs krav ✓
+2) login funktion? hardcoded? evt via et array med users? 
 3) renskriv noter
 4) læg noter op til de tilsvarende sider
-5) kommentar? noget med at tilføje noget? 
-6) uddyb emner i menuen på forsiden i stedet for something something 
+5) lav funktion til at tilføje noget  
+
+
+Requirements for the project:
+
+- Serve the pages with Express. ✓
+- Use Server-Side Rendering (SSR). ✓
+- Split up the documentation in pages rather than one long HTML page. ✓
+- Should have some nice styling (custom or with a styling framework). ✓
+
+Requirements about the documentation:
+
+- Should contain terminal commands.
+- Should contain code snippets.
+- Should contain all the tools we’ve used and explain them.
+- Should cover all the theory that we’ve touched upon.
+
+Admin panel:
+
+- Create (a) login/signup page(s). 
+- The admin panel should allow users to fill out the content for a new documentation page in the browser.
+- Bonus (Which means that this is not a requirement): Allow users to create new pages. 
+
+Bonus:
+
+- Research a covered topic in-depth that you want to understand better.
+- Learn something new and document it.

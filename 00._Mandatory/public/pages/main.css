@@ -13,7 +13,6 @@ footer {
 * {
     padding: 0;
     margin: 0;
-    text-align: center;
 }
 
 body {
@@ -33,6 +32,21 @@ div {
 
 p {
     margin: 16px;
+    font-size: 12px;
+    color: grey;
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+    position: relative;
+    overflow: hidden;
+}
+
+h3 {
+    text-align: left;
+}
+
+#mainheader {
+    margin: 16px;
     font-size: 96px;
     color: #ccc;
     text-transform: uppercase;
@@ -42,16 +56,27 @@ p {
     overflow: hidden;
 }
 
-nav {
+h1 {
+    margin: 16px;
+    font-size: 96px;
+    color: #ccc;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+#nav2 {
     margin: 25px;
     padding: 16px;
 }
 
-#menuItems {
+#ul {
     list-style: none;
     display: flex;
-    align-items: center;
-
 }
 
 #li {
@@ -66,7 +91,6 @@ a {
     transition: all 0.5s ease-in-out;
     position: relative;
     text-transform: uppercase;
-    text-align: center;
 }
 
 a:hover {
@@ -81,4 +105,8 @@ a:hover span {
 
 a:hover:before {
     content: "❤"
+}
+
+#infotext {
+
 }
