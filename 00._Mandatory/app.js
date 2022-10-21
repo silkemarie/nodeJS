@@ -1,9 +1,12 @@
 import express from "express";
+import loginRouter from "./routers/loginRouter.js";
 import weekRouter from "./routers/weekRouters.js";
 const app = express();
 
+app.use(express.json());
 app.use(express.static("public"));
 app.use(weekRouter);
+app.use(loginRouter);
 
 import { renderPage, injectData } from "./util/templateEngine.js";
 
@@ -15,56 +18,72 @@ const frontpagePage = renderPage("/frontpage/frontpage.html",
 
 const ses1Page = renderPage("/ses1/ses.html",
     {
-        tabTitle: "Session 1",
+        tabTitle: "Lesson 1",
         cssLink: `<link rel="stylesheet" href="/pages/main.css">`
     });
-
-//to do: lav tabtitle interactiv 
-
     
 const ses2Page = renderPage("/ses2/ses2.html",
     {
-        tabTitle: "Session 2",
+        tabTitle: "Lesson 2",
         cssLink: `<link rel="stylesheet" href="/pages/main.css">`
     });
-
     
 const ses3Page = renderPage("/ses3/ses3.html",
     {
-        tabTitle: "Session 3",
+        tabTitle: "Lesson 3",
         cssLink: `<link rel="stylesheet" href="/pages/main.css">`
     });
 
-    
-
 const ses4Page = renderPage("/ses4/ses4.html",
     {
-        tabTitle: "Session 4",
+        tabTitle: "Lesson 4",
         cssLink: `<link rel="stylesheet" href="/pages/main.css">`
     });
 
 const ses5Page = renderPage("/ses5/ses5.html",
     {
-        tabTitle: "Session 5",
+        tabTitle: "Lesson 5",
         cssLink: `<link rel="stylesheet" href="/pages/main.css">`
     });
 
 const ses6Page = renderPage("/ses6/ses6.html",
     {
-        tabTitle: "Session 6",
+        tabTitle: "Lesson 6",
         cssLink: `<link rel="stylesheet" href="/pages/main.css">`
     });
 
 const ses7Page = renderPage("/ses7/ses7.html",
     {
-        tabTitle: "Session 7",
+        tabTitle: "Lesson 7",
         cssLink: `<link rel="stylesheet" href="/pages/main.css">`
     });
 
+const loginPage = renderPage("/login/login.html",
+    {
+        tabTitle: "Login",
+        cssLink: `<link rel="stylesheet" href="/pages/main.css">`
+    });
+
+const adminPage = renderPage("/admin/admin.html",
+        {
+            tabTitle: "Admin",
+            cssLink: `<link rel="stylesheet" href="/pages/main.css">`
+        });
     
 
 app.get("/", (req, res) => {
     res.send(frontpagePage);
+});
+
+app.get("/login", (req, res) => {
+    //hvis ikke sessionstorage:
+    res.send(loginPage);
+    //Hvis sessionstorage:
+    //res.send(adminPage);
+});
+
+app.get("/admin", (req, res) => {
+    res.send(adminPage);
 });
 
 app.get("/ses1", (req, res) => {

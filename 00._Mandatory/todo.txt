@@ -1,8 +1,12 @@
 1) læs krav ✓
-2) login funktion? hardcoded? evt via et array med users? 
+2) login funktion? hardcoded? evt via et array med users? ✓
 3) renskriv noter
-4) læg noter op til de tilsvarende sider
-5) lav funktion til at tilføje noget  
+4) læg noter op til de tilsvarende sider ✓
+5) lav funktion til at tilføje noget
+6) research de emner jeg ikke har noter om og udfyld de emner 
+7) overvej hvilke af de ekstra emner der er værd at skrive om 
+8) find eller lav code snippets til dele af koden (Har masser i mine noter)
+9) det samme med terminal commands 
 
 
 Requirements for the project:
@@ -16,12 +20,12 @@ Requirements about the documentation:
 
 - Should contain terminal commands.
 - Should contain code snippets.
-- Should contain all the tools we’ve used and explain them.
-- Should cover all the theory that we’ve touched upon.
+- Should contain all the tools we’ve used and explain them. 
+- Should cover all the theory that we’ve touched upon. ✓
 
 Admin panel:
 
-- Create (a) login/signup page(s). 
+- Create (a) login/signup page(s). ✓
 - The admin panel should allow users to fill out the content for a new documentation page in the browser.
 - Bonus (Which means that this is not a requirement): Allow users to create new pages. 
 
