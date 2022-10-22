@@ -295,28 +295,18 @@ weekRouter.get("/ses/:id", (req, res) => {
         { subEntriesId: 1, 
           subTitle: `Environment variables`, 
           text: `
-          Hvordan starter man et script
-          Env variabler
-          Tools: nodemon, npm, cross-env
-
-
-          learning goal: Understands what problem that cross-env solves.
-          
+          Environment variables provide information about the environment in which the process is running.
+          We use Node environment variables to handle sensitive data like passwords, which we shouldn't hard code, or configuration details that might change between runs, like what port a server should listen on.
+          See example from earlier project where we use environment variable for our port:
           `, 
-          imageUrl: "./pages/ses1/apiDesign.png",
+          imageUrl: "./pages/images/port.png",
 
         },
         { subEntriesId: 2, 
           subTitle: `Redirecting`, 
           text: `
-          Redirection: \n 
-          Hvordan redirecter man. A-tag. Anchor-tag.
-          Kan også gøre det med replace
-          Eller med et meta-tag. 
-          <meta http-equiv = "refresh" content ="3; url =/battle" />
-          ”how to programmatically redirect” <- google søgning 
-
-
+          You can redirect by using an a-tag or an achor-tag.
+          You can also redirect with "replace" or with a meta-tag.
           `, 
           imageUrl: "./pages/ses1/apiDesign.png",
 
@@ -330,50 +320,25 @@ weekRouter.get("/ses/:id", (req, res) => {
         { subEntriesId: 1, 
           subTitle: `CSR`, 
           text: `
-          Serverside vs clientside
-          Serverfiler: app.js, package.json, package-lock.json, node_modules, .igitignore, LICENSE, README.md
-          Klientfiler: alt i public-mappen
-
+          Client files are everything in our public-folder.
 
           Client Side Rendering means generating the HTML components on the browser side, by executing Javascript code within the browser that manipulates the HTML DOM to build the HTML nodes.
-
-
+          
+          Example of CSR from this project:
           `, 
-          imageUrl: "./pages/ses1/apiDesign.png",
+          imageUrl: "./pages/images/csr.png",
 
         },
         { subEntriesId: 2, 
           subTitle: `SSR`, 
           text: `
+          Serverside files are: app.js, package.json, package-lock.json, node_modules, .igitignore, LICENSE, README.md
+
           Server Side Rendering means generating the HTML for a webpage on the server side.
-
-SSR-at request time: Server side rendering may happen at request-time, in which case the server dynamically generates the HTML for each URL request at run time.
-This is also called Dynamic Server Side Rendering.
-SSR-at build time: Alternatively, the HTML for the web pages may be pre-generated on the server side at “build” time, and this pre-generated static HTML is returned to the browser, when the webpage is requested
-i.e. HTML is pre-generated, and is not generated on the fly at request-time.
-This is also called Pre-rendering.
-
-
-All the browser has to do is parse this HTML to generate the HTML DOM and display the web page.
-
-Server Side Rendering can be done at build time, which pre-generates the HTML, or Server Side Rendering can be done at request time for each incoming request from the browser.
-
-Dynamic Server Side Rendering(SSR) i.e. Server Side Rendering at request-time, requires a web-server running at run-time, to receive the navigation requests, fetch external data (on the server-side), dynamically generate the HTML, and then return the fully formed HTML to the browser.
-
-Websites that are built using traditional server-side languages like PHP, ASP.NET (ASP), Java (JSP), Ruby, etc. are fully Server Side Rendered.
-
-Note that browsers only understand HTML, CSS and Javascript, and the server-side languages (i.e. PHP, .NET, Ruby etc) basically programmatically generate HTML on the server-side and then send that HTML to the browser.
-
-So whether you are using PHP, or Java, or Ruby, as your backend language, in SSR they all generate HTML that is returned to the browser. The server-side languages typically use some web framework and HTML templating during development to facilitate the generation of the HTML on the server-side.
-
-Advantages of SSR
-Better SEO and page ranking, since the HTML is fully formed on the server-side and web crawlers are more easily able to index the HTML pages.
-Faster load time for the initial page render that a CSR App, since the HTML received from the server can be quickly parsed by the browser and displayed immediately, and does not require a separate JS bundle to be downloaded and executed to display the webpage.
-Once the web page is visible in the browser it is fully interactive
-i.e. FCP = TTI
-Since the HTML for the webpage is generated on the server-side, the webpage will display even if the browser Javascript is disabled.
+          
+          See example of SSR from this project:
           `, 
-          imageUrl: "./pages/ses1/apiDesign.png",
+          imageUrl: "./pages/images/ssr.png",
 
         },
       ],
@@ -385,17 +350,20 @@ Since the HTML for the webpage is generated on the server-side, the webpage will
         { subEntriesId: 1, 
           subTitle: `Injecting data`, 
           text: `
-          to do 
+          Example of injected data in this project:
           `, 
-          imageUrl: "./pages/ses1/apiDesign.png",
+          imageUrl: "./pages/images/inject.png",
 
         },
         { subEntriesId: 2, 
           subTitle: `Express routers`, 
           text: `
-          bruger vi i app.js 
+          Express Router is a routing mechanism that refers to how an application's endpoints (URIs) respond to client requests.
+
+          We use express routers in our app.js file.
+          The beginning of the app.js file might look something like this: 
           `, 
-          imageUrl: "./pages/ses1/apiDesign.png",
+          imageUrl: "./pages/images/express.png",
 
         },
       ],
