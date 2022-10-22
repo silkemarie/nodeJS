@@ -1,12 +1,30 @@
 
+Søndag d. 23.:
+
+1) gør så man kun kan access den hvis man er logget ind 
+2) udvælg hvilke bonus emner jeg vil skrive mere om 
+3) ryd op i kode 
+4) ryd op i css 
+5) lav ny branch til hosting 
+6) opret hosting evt. på Heroku 
+7) del heroku-link 
+
+
+Bonus emner:
+- type coersion 
+- referential transparency 
+- hoisting
+- Clean code / code conventions.  Can argue why clean code and following code conventions is a good idea.
+- Sending data with GET requests
+
 Lørdag d. 22:
 
 1) gennemgå emner med August og få styr på dem ✓
-2) renskriv noterne
-3) lav en side hvor man kan skrive ting, hvis man er logget ind
+2) renskriv noterne ✓
+3) lav en side hvor man kan skrive ting, hvis man er logget ind ✓
 4) gør så man kan tilføje billeder  ✓
-5) tilføj terminal eksempler i noterne 
-6) tilføj kodeeksempler i noterne 
+5) tilføj terminal eksempler i noterne ✓
+6) tilføj kodeeksempler i noterne ✓
 
 
 inden aflevering:
@@ -17,13 +35,13 @@ inden aflevering:
 
 1) læs krav ✓
 2) login funktion? hardcoded? evt via et array med users? ✓
-3) renskriv noter
+3) renskriv noter ✓
 4) læg noter op til de tilsvarende sider ✓
 5) lav funktion til at tilføje noget
 6) research de emner jeg ikke har noter om og udfyld de emner ✓
 7) overvej hvilke af de ekstra emner der er værd at skrive om 
-8) find eller lav code snippets til dele af koden (Har masser i mine noter)
-9) det samme med terminal commands 
+8) find eller lav code snippets til dele af koden (Har masser i mine noter) ✓
+9) det samme med terminal commands ✓
 
 
 Requirements for the project:
@@ -35,9 +53,9 @@ Requirements for the project:
 
 Requirements about the documentation:
 
-- Should contain terminal commands.
-- Should contain code snippets.
-- Should contain all the tools we’ve used and explain them. 
+- Should contain terminal commands. ✓
+- Should contain code snippets. ✓
+- Should contain all the tools we’ve used and explain them. ✓
 - Should cover all the theory that we’ve touched upon. ✓
 
 Admin panel:

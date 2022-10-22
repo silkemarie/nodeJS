@@ -15,7 +15,7 @@ async function getLogin() {
   if(response.ok) {
     const data = await response.json();
     sessionStorage.setItem("userId", data.data);
-    window.location.replace("/");
+    window.location.replace("/admin");
   } else {
    document.getElementById("wrongPassword").textContent = "Forkert email eller password"
   }

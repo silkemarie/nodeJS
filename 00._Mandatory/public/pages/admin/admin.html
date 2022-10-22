@@ -1,18 +1,21 @@
-<!--TODO: 
-lav et kommentarfelt eller noget hvor der kan skrives noget, hvis man er logget ind
-evt lav en post til, så det virker?
-men tror ikke det behøves virke ifgl opgavebeskrivelsen 
-
-- skal kun kunne ses, hvis man er logget ind
-- skal kunne skrive noget, ala kommentarfelt
-- title, subtitle, text 
-- Gem-knap -->
-
 <p id="mainheader" style="color: pink">Add notes</p>
 
 <div>Add your own notes here</div>
+<br>
+<br>
 
 <section>
-  
+
+<form>
+  <input type="text" name="title" class="textbox" id="title" placeholder="Title"/>
+  <label for="title"></label>
+  <br>
+  <br>
+  <textarea rows="12" cols="60" class="textbox" style="height:100px;" type="text" name="text" id="text" placeholder="Text"></textarea>
+  <label for="text"></label>
+  <br>
+  <br>
+  <input class="loginbutton" type="submit" value="Submit!" />
+</form>
 
 </section>

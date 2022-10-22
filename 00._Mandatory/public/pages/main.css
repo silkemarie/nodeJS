@@ -140,3 +140,9 @@ img {
     max-width: 500px;
     height: auto;
 }
+
+.textbox {
+    border: 2px solid pink;
+    border-radius: 4px;
+}
+

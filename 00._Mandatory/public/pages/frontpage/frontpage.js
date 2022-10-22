@@ -10,7 +10,6 @@ async function getWeeks(weeksId) {
   const weeks = await response.json();
 
   console.log(response);
-  console.log(weeks.data.title);
 
   let titel = document.createElement("h1");
   titel.textContent = weeks.data.title;

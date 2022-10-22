@@ -5,20 +5,6 @@ const weekRouter = Router();
 
 export default weekRouter;
 
-//todo: hvorfor virker \n ikke? 
-
-// skal jeg komme ind på nodemon + type coersion også? står ikke som learning goals, 
-// men vi har lært det? overvej
-// Referential transparency ? 
-// hoisting ? 
-// express - ikke som router? 
-// data typer
-// Can explain what Node.js is and how to run files with it.
-// Clean code / code conventions.  Can argue why clean code and following code conventions is a good idea.
-// Sending data with GET requests
-// Understand scoping in Javascript and know to always use const if you can get away with it otherwise let.
-// Should contain all the tools we’ve used and explain them. - nodemon? + ? 
-
 
 weekRouter.get("/ses/:id", (req, res) => {
   //console.log("vi er i weekrouters id");
@@ -308,7 +294,7 @@ weekRouter.get("/ses/:id", (req, res) => {
           You can redirect by using an a-tag or an achor-tag.
           You can also redirect with "replace" or with a meta-tag.
           `, 
-          imageUrl: "./pages/ses1/apiDesign.png",
+          imageUrl: "",
 
         },
       ],
