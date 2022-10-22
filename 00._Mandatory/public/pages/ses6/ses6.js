@@ -29,5 +29,10 @@ async function getWeeks() {
     let text = document.createElement("p");
     text.textContent = entry.text;
     box.appendChild(text); 
+
+      //tilføjer billede
+      const image = document.createElement("img");
+      image.src = entry.imageUrl;
+      box.appendChild(image);
   });
 }

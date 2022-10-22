@@ -67,38 +67,30 @@ weekRouter.get("/ses/:id", (req, res) => {
       subEntries: [
         {
           subEntriesId: 1,
-          subTitle: `Git`,
-          text: "i.	Versionsstyringprogrammet, lokalt på min maskine. Det github er bygget op omkring. ii.	Git er versionsstyring. Github er et lag udover dét, software configuration management.\n iii.	Manage and keep control of version. Github is a cloudbased hostingservice, that lets you manage git repositories."
-          + "iv.	Bl.a. branches, main, dev, features."
-          + "v.	Git actions"
-          + "vi.	Git?\n"
-          + "\r\n"
-          + "vii.	add, commit, push → to project on GitHub\n\n\n\n\n"
-          + "\r\n"
-          + "viii.	har en remote branch på github. pull requests er en github ting. Kunne også have brugt gitlab og en azure stepup. Github er bare den hjemmeside vi har valgt at bruge til at administrere vores projekter.\n"
-          + "x.	Git er  noget vi har på vores computer, github er det sted vi har valgt at manage vores projekt.",
-          imageUrl: "",
+          subTitle: `Terminal commands and git`,
+          text: `
+          Git is a version control system locally on your machine. Git is what Github is built around.
+          Github is a layer above git, a software configuration management, to manage and keep control of version.
+          Github is a cloudbased hostingservice, that lets you manage git repositories. 
+          
+          Git is something on our computer, while Github is the place we have chosen to manage our project.
+          
+          In our terminal, aside from using git, we also use Nodemon this semester with NodeJS.
+          Nodemon monitors changes in our source and automatically restarts the server, meaning we can see the changes instantly, instead of manually stopping and starting our server. 
+          
+          The image here shows the terminal command for using nodemon.`,
+          imageUrl: "./pages/images/nodemonEx.png",
         },
         {
           subEntriesId: 2,
           subTitle: `REST API`,
-          text: ` skal jeg skrive noget om crud? + ville nodemon og type coersion også passe ind i lektion 1?
+          text: `
+          An API is a set of definitions and protocols for building and integrating application software. It's sometimes referred to as a contract between an information provider and an information user—establishing the content required from the consumer (the call) and the content required by the producer (the response). 
           
-          A REST API (also known as RESTful API) is an application programming interface (API or web API) that conforms to the constraints of REST architectural style and allows for interaction with RESTful web services. REST stands for representational state transfer and was created by computer scientist Roy Fielding.
-
-          What's an API?
-An API is a set of definitions and protocols for building and integrating application software. It’s sometimes referred to as a contract between an information provider and an information user—establishing the content required from the consumer (the call) and the content required by the producer (the response). For example, the API design for a weather service could specify that the user supply a zip code and that the producer reply with a 2-part answer, the first being the high temperature, and the second being the low.  
-
-In other words, if you want to interact with a computer or system to retrieve information or perform a function, an API helps you communicate what you want to that system so it can understand and fulfill the request. 
-
-You can think of an API as a mediator between the users or clients and the resources or web services they want to get. It’s also a way for an organization to share resources and information while maintaining security, control, and authentication—determining who gets access to what. 
-
-Another advantage of an API is that you don’t have to know the specifics of caching—how your resource is retrieved or where it comes from.
-
-
-
-        `,
-        imageUrl: "./pages/ses1/meme.png",
+          It's a way to share resources and information, eg. as in the Pokemon project we did.
+          APIs can contain any kind of information.
+          For our first assignment we designed our own API. See image below.`,
+        imageUrl: "./pages/images/apiDesign.png",
         },
       ],
     },
@@ -108,88 +100,72 @@ Another advantage of an API is that you don’t have to know the specifics of ca
       subEntries: [
         { subEntriesId: 1,
           subTitle: `Variables`,
-          text: `Noget om data typer? 
-          Variables are containers for storing data (storing data values).
-          var, let, const
-          vi bruger const når vi kan og let når vi ikke kan
-          let er hvis variablen kan ændre sig. 
+          text: ` 
+          Variables are containers for storing data or data values.
+          
+          In JavaScript we use the data types:
 
-          eksempel:
-          const price1 = 5;
-          const price2 = 6;
-          let total = price1 + price2;
-
-
-          deklarér en variable:
-          let carName;
-
-          nu er den undefined. har ingen value. 
-          giv den value: 
-          carName = "Volvo";
-
-          kan også gøre det med det samme:
-          let carName = "Volvo";
-          deklareret + value på samme tid. 
+          ♡ var
+          ♡ let
+          ♡ const
+          
+          We use const whenever we can and let when we can't.
+          let is used if the variable can change later. 
 
           It's a good programming practice to declare all variables at the beginning of a script.
 
+          You declare a variable by datatype followed by the variable name:
+          
+                let scifiBook;
 
+          The variable is now declare but undefined, as it has no value. 
+          You give it a value like this: 
+          
+                scifiBook = "Murderbot Diaries";
+
+          This can of course also be done in the same line:
+
+                let scifiBook = "Murderbot Diaries";
+          
+          In this line the variable is both declared and given value. 
           `,
+          imageUrl: "",
+
         },
         { subEntriesId: 2,
           subTitle: `Functions`,
-          text: `Functions i javascript? Ikke køres oppefra og ned, men køres allesammen samtidig? 
+          text: `
+          JavaScript isn't run from upside down.
           
           A JavaScript function is a block of code designed to perform a particular task.
-
-A JavaScript function is executed when "something" invokes it (calls it).
-
-syntax:
-A JavaScript function is defined with the function keyword, followed by a name, followed by parentheses ().
-
-Function names can contain letters, digits, underscores, and dollar signs (same rules as variables).
-
-The parentheses may include parameter names separated by commas:
-(parameter1, parameter2, ...)
-
-The code to be executed, by the function, is placed inside curly brackets: {}
-
-Function parameters are listed inside the parentheses () in the function definition.
-
-Function arguments are the values received by the function when it is invoked.
-
-Inside the function, the arguments (the parameters) behave as local variables.
-
-
-
-Invocation:  
-The code inside the function will execute when "something" invokes (calls) the function:
-
-When an event occurs (when a user clicks a button)
-When it is invoked (called) from JavaScript code
-Automatically (self invoked)
-
-
-You can reuse code: Define the code once, and use it many times.
-
-You can use the same code many times with different arguments, to produce different results.
-
-
-
+          
+          A JavaScript function is executed when "something" invokes it (calls it).
+          
+          Syntax:
+          ♡ A JavaScript function is defined with the function keyword, followed by a name, followed by parentheses ().
+          ♡ The code to be executed, by the function, is placed inside curly brackets: {}
+          ♡ Function parameters are listed inside the parentheses () in the function definition.
+          ♡ Function arguments are the values received by the function when it is invoked.
+          
+          The code inside the function will execute when "something" invokes (calls) the function:
+          This can mean:
+          ♡ When an event occurs (eg. when a user clicks a button)
+          ♡ When it is invoked (called) from JavaScript code
+          ♡ Automatically (self invoked)
 
           `, 
+          imageUrl: "",
+
         },
         { subEntriesId: 3,
           subTitle: `Callback Functions`,
-          text: `In computer programming, a callback or callback function is any reference to executable code that is passed as an argument to another piece of code; that code is expected to call back the callback function as part of its job.
-          bliver ikke kaldt, bliver sendt videre
-          bliver måske aldrig kaldt. 
-          en reference til en eksekverbar kode. 
-          sender en funktionsreference videre som et argument. 
-          enhver funktionsreference der bliver videresendt som et argument. 
-          en funktion, der bliver sendt videre som et argument. 
-          
+          text: `
+          In computer programming, a callback or callback function is any reference to executable code that is passed as an argument to another piece of code; that code is expected to call back the callback function as part of its job.
+          Callback functions might never be called. 
+          They are a callback (reference) to an executable code. 
+          They send a callback function (funktionsreference) along as an argument.  
           `, 
+        imageUrl: "./pages/images/callback.png",
         },
       ],
     },
@@ -199,46 +175,70 @@ You can use the same code many times with different arguments, to produce differ
       subEntries: [
         { subEntriesId: 1,
           subTitle: `Arrow Functions`, 
-          text: `Arrow functions allow us to write shorter function syntax.
-
-
+          text: `
+          Arrow functions allow us to write shorter function syntax.
           `,
+          imageUrl: "./pages/images/arrow.png",
          },
         { subEntriesId: 2, 
           subTitle: `Loops`, 
-          text: `//forEach
-          //map, reduce, filter - vi skal holde os til disse loops. Hvis vi gør det, reducerer vi også mange typer bugs, der opstår ved ikke-funktionel kode
+          text: `
+          In JavaScript, we should stick with these types of loops:
+
+          ♡ map
+          ♡ reduce
+          ♡ filter
+          
+          If we do so, we will also reduce the amount of bugs that arise through non-functional code.
           
           Loop advice:
-          map = mapper til et array af samme størrelse
-          filter = callback i filter tager imod en predicate, hvis den er true i filter, bliver den tilføjet, hvis den er false bliver den sorteret fra
+          map = maps to an array of the same size
+          filter = callback in filter receives a predicate. If it is true in filter, it will be added, while if it is false, it will get sorted.
           
           Only use loops if you are doing "finger couting".
           I.E. if counting to a number.
           
-          Only use forEach if you are doing something and dont care about the sult.
+          Only use forEach if you are doing something and don't care about the result.
           I.E. populating the DOM with elements. 
           
           Use:
           Map for mapping 1:1
           Filter for filtering the array.
-          Reduce to reducing the content of the array. Anders forventer ikke at vi kan bruge reduce.
+          Reduce to reducing the content of the array. Though it is not expected that we can use reduce this semester.
           
           `, 
+          imageUrl: "./pages/images/loop.png",
+
         },
         { subEntriesId: 3,
-          subTitle: `Import & Export`, 
-          text: `bruger vi i: 
-          app.js:
-          import express from "express";
-import loginRouter from "./routers/loginRouter.js";
-import weekRouter from "./routers/weekRouters.js";
-
-templateEngine.js: 
-import fs from "fs";
-export function
-
+          subTitle: `Export`, 
+          text: `
+          We use export to export functions.  
+          We have used both export and import in our brief Dart project.
+          See image below for example of export.
           `, 
+          imageUrl: "./pages/images/export.png",
+
+        },
+        { subEntriesId: 3,
+          subTitle: `Import`, 
+          text: `
+          We use import to import from libraries and from other files. 
+          Eg. in our app.js files we often import express and other routers. 
+          It might look something like this: 
+
+          import express from "express";
+          import loginRouter from "./routers/loginRouter.js";
+          import weekRouter from "./routers/weekRouters.js";
+
+          In our templateEngine.js we imported fs (FileSync). It looked like this: 
+          
+          import fs from "fs";
+
+          For an example of import in our Dart project, see image below.
+          `, 
+          imageUrl: "./pages/images/import.png",
+
         },
       ],
     },
@@ -248,40 +248,43 @@ export function
       subEntries: [
         { subEntriesId: 1, 
           subTitle: `CRUD`, 
-          text: `Put: replacer hele ressourcen
-          Patch: replacer dele af ressourcen
-          Det key value pair der defineres til sidst, er det der bliver gemt. 
+          text: `
+          CRUD stands for Create, Read, Update, Delete and are the pillars of operating data.
+          Hopefully by now we all understand CRUD well.
+          I'll only add these notes then:
           
-          create, read, update, delete, yeah yeah the time-knife, we've all seen it
+          Put: replaces the entire ressource
+          Patch: replaces parts of the ressource
+          
+          What ever key-value pair is defined last, is what's saved. 
           `, 
+          imageUrl: "./pages/images/weallknowcrud.png",
+
         },
         { subEntriesId: 2, 
           subTitle: `Fetching`, 
-          text: `The fetch() method starts the process of fetching a resource from a server.
+          text: `
+          The fetch() method starts the process of fetching a resource from a server.
 
           The fetch() method returns a Promise that resolves to a Response object.
+
+          Example of fetch from our Pokemon project: 
           `, 
+          imageUrl: "./pages/images/fetch.png",
+
         },
         { subEntriesId: 3, 
           subTitle: `Package.json`, 
-          text: `Nyt projekt:
-          I terminalen: npm install express eller npm i eller npm i express
-          opret: package.json
-          opret: app.js
-          test om den kører: node app.js eller nodemon.cmd app.js
-          Package.json = vores entry point til vores projekt
-Json er altid gåseøjne. En af forskellene fra javascript.
-
-
-I package.json definerer vi versioner. Har ikke præcis versionsstyring. 
-I package-lock.json får vi meget præcise informationer om den version der er blevet installeret. 
-Hvis der er problemer med ”jamen det virker på min computer” så sammenlign jeres package-lock.json filer
-
-Hvilken fil skal jeg skabe for at definere entrypoint til mit projekt?
-Package.json
-
+          text: `
+          Package.json is our entry point to our project.
+          Json content should always be writted with "". This is one of the major differences from JavaScript. 
           
+          In package.json we define versions. 
+          In package-lock.json we get very precise information about the version that has been installed.
+          If you ever get in a "it works on my computer"-situation, it's a good idea to compare your package-lock.json files. 
           `, 
+          imageUrl: "./pages/images/packagejson.png",
+
         },
       ],
     },
@@ -291,7 +294,8 @@ Package.json
       subEntries: [
         { subEntriesId: 1, 
           subTitle: `Environment variables`, 
-          text: `Hvordan starter man et script
+          text: `
+          Hvordan starter man et script
           Env variabler
           Tools: nodemon, npm, cross-env
 
@@ -299,18 +303,23 @@ Package.json
           learning goal: Understands what problem that cross-env solves.
           
           `, 
+          imageUrl: "./pages/ses1/apiDesign.png",
+
         },
         { subEntriesId: 2, 
           subTitle: `Redirecting`, 
-          text: ` Redirection: \n 
-Hvordan redirecter man. A-tag. Anchor-tag.
-Kan også gøre det med replace
-Eller med et meta-tag. 
-<meta http-equiv = "refresh" content ="3; url =/battle" />
-”how to programmatically redirect” <- google søgning 
+          text: `
+          Redirection: \n 
+          Hvordan redirecter man. A-tag. Anchor-tag.
+          Kan også gøre det med replace
+          Eller med et meta-tag. 
+          <meta http-equiv = "refresh" content ="3; url =/battle" />
+          ”how to programmatically redirect” <- google søgning 
 
 
           `, 
+          imageUrl: "./pages/ses1/apiDesign.png",
+
         },
       ],
     },
@@ -320,7 +329,7 @@ Eller med et meta-tag.
       subEntries: [
         { subEntriesId: 1, 
           subTitle: `CSR`, 
-          text: `text3 for subtitle 1
+          text: `
           Serverside vs clientside
           Serverfiler: app.js, package.json, package-lock.json, node_modules, .igitignore, LICENSE, README.md
           Klientfiler: alt i public-mappen
@@ -330,6 +339,8 @@ Eller med et meta-tag.
 
 
           `, 
+          imageUrl: "./pages/ses1/apiDesign.png",
+
         },
         { subEntriesId: 2, 
           subTitle: `SSR`, 
@@ -362,6 +373,8 @@ Once the web page is visible in the browser it is fully interactive
 i.e. FCP = TTI
 Since the HTML for the webpage is generated on the server-side, the webpage will display even if the browser Javascript is disabled.
           `, 
+          imageUrl: "./pages/ses1/apiDesign.png",
+
         },
       ],
     },
@@ -371,13 +384,19 @@ Since the HTML for the webpage is generated on the server-side, the webpage will
       subEntries: [
         { subEntriesId: 1, 
           subTitle: `Injecting data`, 
-          text: `to do 
+          text: `
+          to do 
           `, 
+          imageUrl: "./pages/ses1/apiDesign.png",
+
         },
         { subEntriesId: 2, 
           subTitle: `Express routers`, 
-          text: `bruger vi i app.js 
+          text: `
+          bruger vi i app.js 
           `, 
+          imageUrl: "./pages/ses1/apiDesign.png",
+
         },
       ],
     },
