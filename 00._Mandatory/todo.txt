@@ -1,9 +1,26 @@
+
+Lørdag d. 22:
+
+1) gennemgå emner med August og få styr på dem ✓
+2) renskriv noterne
+3) lav en side hvor man kan skrive ting, hvis man er logget ind
+4) gør så man kan tilføje billeder  ✓
+5) tilføj terminal eksempler i noterne 
+6) tilføj kodeeksempler i noterne 
+
+
+inden aflevering:
+1) ryd op i koden 
+2) ryd særligt op i css fil!
+2) læg den online evt. på heroku 
+
+
 1) læs krav ✓
 2) login funktion? hardcoded? evt via et array med users? ✓
 3) renskriv noter
 4) læg noter op til de tilsvarende sider ✓
 5) lav funktion til at tilføje noget
-6) research de emner jeg ikke har noter om og udfyld de emner 
+6) research de emner jeg ikke har noter om og udfyld de emner ✓
 7) overvej hvilke af de ekstra emner der er værd at skrive om 
 8) find eller lav code snippets til dele af koden (Har masser i mine noter)
 9) det samme med terminal commands 

@@ -1,7 +1,6 @@
 let box = document.getElementById("box");
-let image = document.getElementById("image");
 
-getWeeks(1);
+getWeeks(0);
 
 async function getWeeks(weeksId) {
   const response = await fetch(
@@ -28,11 +27,5 @@ async function getWeeks(weeksId) {
     let text = document.createElement("p");
     text.textContent = entry.text;
     box.appendChild(text); 
-
-    //tilføjer billede
-    const image = document.createElement("img");
-    image.src = entry.imageUrl;
-    box.appendChild(image);
   });
-  
 }
