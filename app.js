@@ -116,13 +116,4 @@ app.get("/ses7", (req, res) => {
     res.send(ses7Page);
 });
 
-
-//const PORT = process.env.PORT || 8080;
-//console.log(Number(process.env.PORT));
-
-const server = app.listen(8080, (error) => {
-    if (error) {
-        console.log(error);
-    }
-    console.log("Server is running on", server.address().port);
-});
+app.listen(process.env.PORT || 8080, () => {console.log("Server is running on port ", 8080)});
