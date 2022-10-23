@@ -5,8 +5,8 @@ Søndag d. 23.:
 2) udvælg hvilke bonus emner jeg vil skrive mere om 
 3) ryd op i kode ✓
 4) ryd op i css ✓
-5) lav ny branch til hosting 
-6) opret hosting evt. på Heroku 
+5) lav ny branch til hosting ✓
+6) opret hosting evt. på Heroku ✓ 
 7) del heroku-link 
 
 - gjort så admin-linket i header redirecter til /admin hvis man allerede er logget ind ✓
@@ -38,9 +38,9 @@ Lørdag d. 22:
 
 
 inden aflevering:
-1) ryd op i koden 
-2) ryd særligt op i css fil!
-2) læg den online evt. på heroku 
+1) ryd op i koden ✓
+2) ryd særligt op i css fil! ✓
+2) læg den online evt. på heroku ✓
 
 
 1) læs krav ✓
@@ -71,7 +71,7 @@ Requirements about the documentation:
 Admin panel:
 
 - Create (a) login/signup page(s). ✓
-- The admin panel should allow users to fill out the content for a new documentation page in the browser.
+- The admin panel should allow users to fill out the content for a new documentation page in the browser. ✓
 - Bonus (Which means that this is not a requirement): Allow users to create new pages. 
 
 Bonus:
