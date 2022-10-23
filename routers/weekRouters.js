@@ -76,7 +76,7 @@ const weeks = [
           It's a way to share resources and information, eg. as in the Pokemon project we did.
           APIs can contain any kind of information.
           For our first assignment we designed our own API. See image below.`,
-        imageUrl: "./pages/images/apiDesign.png",
+        imageUrl: "./public/pages/images/apiDesign.png",
       },
     ],
   },
@@ -154,7 +154,7 @@ const weeks = [
           They are a callback (reference) to an executable code. 
           They send a callback function (funktionsreference) along as an argument.  
           `,
-        imageUrl: "./pages/images/callback.png",
+        imageUrl: "./images/callback.png",
       },
     ],
   },
