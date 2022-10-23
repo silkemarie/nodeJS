@@ -22,3 +22,9 @@ async function getLogin() {
 }
 
 loginButton.addEventListener("click", getLogin);
+
+let session = sessionStorage.getItem("userId")
+console.log(session)
+if(session){
+  window.location.replace("/admin");
+}

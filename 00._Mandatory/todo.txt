@@ -1,13 +1,15 @@
 
 Søndag d. 23.:
 
-1) gør så man kun kan access den hvis man er logget ind 
+1) gør så man kun kan access den hvis man er logget ind ✓
 2) udvælg hvilke bonus emner jeg vil skrive mere om 
 3) ryd op i kode 
 4) ryd op i css 
 5) lav ny branch til hosting 
 6) opret hosting evt. på Heroku 
 7) del heroku-link 
+
+- gjort så admin-linket i header redirecter til /admin hvis man allerede er logget ind ✓
 
 
 Bonus emner:
