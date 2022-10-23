@@ -76,7 +76,7 @@ const weeks = [
           It's a way to share resources and information, eg. as in the Pokemon project we did.
           APIs can contain any kind of information.
           For our first assignment we designed our own API. See image below.`,
-        imageUrl: "./public/pages/images/apiDesign.png",
+        imageUrl: "https://i.imgur.com/JfeO9nW.png",
       },
     ],
   },
@@ -154,7 +154,7 @@ const weeks = [
           They are a callback (reference) to an executable code. 
           They send a callback function (funktionsreference) along as an argument.  
           `,
-        imageUrl: "./images/callback.png",
+        imageUrl: "https://i.imgur.com/0LamG1D.png",
       },
     ],
   },
@@ -168,7 +168,7 @@ const weeks = [
         text: `
           Arrow functions allow us to write shorter function syntax.
           `,
-        imageUrl: "/pages/images/arrow.png",
+        imageUrl: "https://i.imgur.com/bEmpYyt.png",
       },
       {
         subEntriesId: 2,
@@ -198,7 +198,7 @@ const weeks = [
           Reduce to reducing the content of the array. Though it is not expected that we can use reduce this semester.
           
           `,
-        imageUrl: "./pages/images/loop.png",
+        imageUrl: "https://i.imgur.com/GnBHyBv.png",
 
       },
       {
@@ -209,7 +209,7 @@ const weeks = [
           We have used both export and import in our brief Dart project.
           See image below for example of export.
           `,
-        imageUrl: "./pages/images/export.png",
+        imageUrl: "https://i.imgur.com/J4MAuhZ.png",
 
       },
       {
@@ -230,7 +230,7 @@ const weeks = [
 
           For an example of import in our Dart project, see image below.
           `,
-        imageUrl: "./pages/images/import.png",
+        imageUrl: "https://i.imgur.com/FdizJVR.png",
 
       },
     ],
@@ -252,7 +252,7 @@ const weeks = [
           
           What ever key-value pair is defined last, is what's saved. 
           `,
-        imageUrl: "./pages/images/weallknowcrud.png",
+        imageUrl: "https://i.imgur.com/pnYQ3x7.png",
 
       },
       {
@@ -265,7 +265,7 @@ const weeks = [
 
           Example of fetch from our Pokemon project: 
           `,
-        imageUrl: "./pages/images/fetch.png",
+        imageUrl: "https://i.imgur.com/YP8wsAP.png",
 
       },
       {
@@ -279,7 +279,7 @@ const weeks = [
           In package-lock.json we get very precise information about the version that has been installed.
           If you ever get in a "it works on my computer"-situation, it's a good idea to compare your package-lock.json files. 
           `,
-        imageUrl: "./pages/images/packagejson.png",
+        imageUrl: "https://i.imgur.com/8H7CMK4.png",
 
       },
     ],
@@ -296,7 +296,7 @@ const weeks = [
           We use Node environment variables to handle sensitive data like passwords, which we shouldn't hard code, or configuration details that might change between runs, like what port a server should listen on.
           See example from earlier project where we use environment variable for our port:
           `,
-        imageUrl: "./pages/images/port.png",
+        imageUrl: "https://i.imgur.com/KmzjkhH.png",
 
       },
       {
@@ -325,7 +325,7 @@ const weeks = [
           
           Example of CSR from this project:
           `,
-        imageUrl: "./pages/images/csr.png",
+        imageUrl: "https://i.imgur.com/RoiZLaf.png",
 
       },
       {
@@ -338,7 +338,7 @@ const weeks = [
           
           See example of SSR from this project:
           `,
-        imageUrl: "./pages/images/ssr.png",
+        imageUrl: "https://i.imgur.com/nqtcBzj.png",
 
       },
     ],
@@ -353,7 +353,7 @@ const weeks = [
         text: `
           Example of injected data in this project:
           `,
-        imageUrl: "./pages/images/inject.png",
+        imageUrl: "https://i.imgur.com/qvOqaIi.png",
 
       },
       {
@@ -365,7 +365,7 @@ const weeks = [
           We use express routers in our app.js file.
           The beginning of the app.js file might look something like this: 
           `,
-        imageUrl: "./pages/images/express.png",
+        imageUrl: "https://i.imgur.com/qB9c8Hu.png",
 
       },
     ],
