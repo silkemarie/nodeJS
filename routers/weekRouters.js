@@ -65,7 +65,7 @@ const weeks = [
           Nodemon monitors changes in our source and automatically restarts the server, meaning we can see the changes instantly, instead of manually stopping and starting our server. 
           
           The image here shows the terminal command for using nodemon.`,
-        imageUrl: "./pages/images/nodemonEx.png",
+        imageUrl: "pages/images/nodemonEx.png",
       },
       {
         subEntriesId: 2,
@@ -168,7 +168,7 @@ const weeks = [
         text: `
           Arrow functions allow us to write shorter function syntax.
           `,
-        imageUrl: "./pages/images/arrow.png",
+        imageUrl: "/pages/images/arrow.png",
       },
       {
         subEntriesId: 2,
