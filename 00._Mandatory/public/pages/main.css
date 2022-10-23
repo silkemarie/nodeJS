@@ -21,7 +21,6 @@ footer {
 body {
     display: flex;
     flex-direction: column;
-    /*justify-content: center;*/
     align-items: center;
     position: relative;
     min-height: 100vh;
@@ -38,7 +37,6 @@ p {
     font-size: 14px;
     color: grey;
     text-align: left;
-    /*margin-left: 5%;*/
     margin-right: 5%;
     position: relative;
     overflow: hidden;
@@ -50,17 +48,6 @@ h3 {
     text-align: left;
 }
 
-#mainheader {
-    margin: 16px;
-    font-size: 96px;
-    color: #ccc;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 600;
-    position: relative;
-    overflow: hidden;
-}
-
 h1 {
     margin: 16px;
     font-size: 96px;
@@ -70,20 +57,6 @@ h1 {
     font-weight: 600;
     position: relative;
     overflow: hidden;
-}
-
-#nav2 {
-    margin: 25px;
-    padding: 16px;
-}
-
-#ul {
-    list-style: none;
-    display: flex;
-}
-
-#li {
-    margin: 50px;
 }
 
 a {

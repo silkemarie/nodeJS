@@ -21,13 +21,13 @@ const ses1Page = renderPage("/ses1/ses.html",
         tabTitle: "Lesson 1",
         cssLink: `<link rel="stylesheet" href="/pages/main.css">`
     });
-    
+
 const ses2Page = renderPage("/ses2/ses2.html",
     {
         tabTitle: "Lesson 2",
         cssLink: `<link rel="stylesheet" href="/pages/main.css">`
     });
-    
+
 const ses3Page = renderPage("/ses3/ses3.html",
     {
         tabTitle: "Lesson 3",
@@ -65,11 +65,11 @@ const loginPage = renderPage("/login/login.html",
     });
 
 const adminPage = renderPage("/admin/admin.html",
-        {
-            tabTitle: "Admin",
-            cssLink: `<link rel="stylesheet" href="/pages/main.css">`
-        });
-    
+    {
+        tabTitle: "Admin",
+        cssLink: `<link rel="stylesheet" href="/pages/main.css">`
+    });
+
 
 app.get("/", (req, res) => {
     res.send(frontpagePage);

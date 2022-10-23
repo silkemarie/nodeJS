@@ -3,8 +3,8 @@ Søndag d. 23.:
 
 1) gør så man kun kan access den hvis man er logget ind ✓
 2) udvælg hvilke bonus emner jeg vil skrive mere om 
-3) ryd op i kode 
-4) ryd op i css 
+3) ryd op i kode ✓
+4) ryd op i css ✓
 5) lav ny branch til hosting 
 6) opret hosting evt. på Heroku 
 7) del heroku-link 
@@ -18,6 +18,14 @@ Bonus emner:
 - hoisting
 - Clean code / code conventions.  Can argue why clean code and following code conventions is a good idea.
 - Sending data with GET requests
+
+
+fremtidige features:
+- log ud knap 
+- bedre footer med mere info 
+- at admin siden rent faktisk gemmer det der sendes 
+- at session siderne er én side der ændres fra gang til gang 
+
 
 Lørdag d. 22:
 

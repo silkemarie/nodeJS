@@ -11,13 +11,13 @@ async function getLogin() {
     },
     body: JSON.stringify(Object.fromEntries(formData)),
   });
-  
-  if(response.ok) {
+
+  if (response.ok) {
     const data = await response.json();
     sessionStorage.setItem("userId", data.data);
     window.location.replace("/admin");
   } else {
-   document.getElementById("wrongPassword").textContent = "Forkert email eller password"
+    document.getElementById("wrongPassword").textContent = "Forkert email eller password"
   }
 }
 
@@ -25,6 +25,6 @@ loginButton.addEventListener("click", getLogin);
 
 let session = sessionStorage.getItem("userId")
 console.log(session)
-if(session){
+if (session) {
   window.location.replace("/admin");
 }

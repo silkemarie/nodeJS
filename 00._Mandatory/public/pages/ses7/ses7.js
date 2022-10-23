@@ -1,13 +1,10 @@
 let box = document.getElementById("box");
 
-//eventlistener + få den i linje 5 
-
 getWeeks(7);
 
 async function getWeeks() {
   const response = await fetch(
     `/ses/7`
-    //`/ses/${(weeksId)}`
   );
   const weeks = await response.json();
 
@@ -18,21 +15,20 @@ async function getWeeks() {
   titel.textContent = weeks.data.title;
   box.appendChild(titel);
 
-  weeks.data.subEntries.forEach((entry) => {   
-   
+  weeks.data.subEntries.forEach((entry) => {
+
     let subtitel = document.createElement("h3");
     subtitel.id = entry.subEntriesId;
-//^gør det samme som det her oppe i navbar + addeventlistener 
 
     subtitel.textContent = entry.subTitle;
-   box.appendChild(subtitel);
+    box.appendChild(subtitel);
     let text = document.createElement("p");
     text.textContent = entry.text;
     box.appendChild(text);
-    
-      //tilføjer billede
-      const image = document.createElement("img");
-      image.src = entry.imageUrl;
-      box.appendChild(image);
+
+    //tilføjer billede
+    const image = document.createElement("img");
+    image.src = entry.imageUrl;
+    box.appendChild(image);
   });
 }
