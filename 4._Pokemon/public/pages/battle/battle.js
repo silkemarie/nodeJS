@@ -27,6 +27,19 @@ fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
         whoWonHeader.innerText = "You lost!";
     }
 
-    // todo call backend with the information
+   
+    const body = {
+        pokemonBattled: pokemon.name,
+        iWon
+    };
+
+//calls backend with information?
+    fetch("/api/battles", {
+        method: "POST",
+        body: JSON.stringify(body),
+        headers: { "Content-type": "application/json" }
+    })
 
 });
+//application.json: det du får imod, unpack det som json 
+//når vi sender fetch, skal vi sende en string. kan løse ved at skrive json.stringify foran vores object

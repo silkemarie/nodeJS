@@ -1,10 +1,33 @@
 import express from "express";
 const app = express();
 
+
+app.use(express.json()); //Hvis du modtager json, så vær i stand til at parse json
 app.use(express.static("public"));
+
+
+const iWon = true;
+const otherValue = "A String";
+
+//key value pairs:
+console.log({
+    iWon: iWon, 
+    otherValue: otherValue
+});
+
+console.log({
+    iWon,
+    otherValue
+});
+//de to samme par. iWon har iWon på linje 7's værdi. 
+
 
 import pokemonRouter from ".routers/pokemonRouter.js";
 app.use(pokemonRouter);
+import battleRouter from ".routers/battleRouter.js";
+app.use(battleRouter.router);
+import battleResultsRouter from ".routers/battleResultsRouters.js";
+app.use(battleResultsRouter);
 
 import { renderPage, injectData } from "./util/templateEngine.js";
 
@@ -19,6 +42,11 @@ const contactPage = renderPage("/contact/contact.html");
 const battlePage = renderPage("/battle/battle.html", {
     cssLink: `<link rel="stylesheet" href="/pages/battle/battle.css">` 
 });
+
+const battleResultPage = renderPage("/battleResults/battleresults.html", {
+    tabTitle: "Statistics", 
+    cssLink: `<link rel="stylesheet" href="/pages/frontpage/frontpage.css">` 
+})
 
 //import path from "path";
 /*let pokemon = [
@@ -48,7 +76,11 @@ app.get("/battle", (req, res) => {
 app.get("/battle/:pokemonName", (req, res) => {
     const pokemonName = req.params.pokemonName;
     //const battlePageWithData = injectData(battlePage, { pokemonName });
-    res.send(battlePageWithData.replace("%%TAB_TITLE%%", `Battle ${req.params.pokemonName}`));
+    res.send(battlePage.replace("%%TAB_TITLE%%", `Battle ${req.params.pokemonName}`));
+});
+
+app.get("/battleresults", (req, res) => {
+    res.send(battleResultPage)
 });
 
 app.get("/contact", (req, res) => {
