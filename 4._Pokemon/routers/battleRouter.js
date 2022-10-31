@@ -1,4 +1,4 @@
-import { Router } from express;
+import { Router } from "express";
 //importerer kun Router fra express library
 /*
 præcis samme funktion, men hiver alt ud fra express:
@@ -29,6 +29,7 @@ router.post("/api/battles", (req, res) => {
     battleResults.push(req.body);
     res.send({ message: "Results received "});
 });
+
 
 export default {
     router,

@@ -1,6 +1,6 @@
 //importerer
 import { Router } from "express";
-import battleRouter from "./battleRouter";
+import battleRouter from "./battleRouter.js";
 
 //Instantierer
 const router = Router();

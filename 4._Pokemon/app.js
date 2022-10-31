@@ -22,12 +22,14 @@ console.log({
 //de to samme par. iWon har iWon på linje 7's værdi. 
 
 
-import pokemonRouter from ".routers/pokemonRouter.js";
+import pokemonRouter from "./routers/pokemonRouter.js";
 app.use(pokemonRouter);
-import battleRouter from ".routers/battleRouter.js";
+import battleRouter from "./routers/battleRouter.js";
 app.use(battleRouter.router);
-import battleResultsRouter from ".routers/battleResultsRouters.js";
+import battleResultsRouter from "./routers/battleResultsRouter.js";
 app.use(battleResultsRouter);
+import contactRouter from "./routers/contactRouter.js";
+app.use(contactRouter);
 
 import { renderPage, injectData } from "./util/templateEngine.js";
 
