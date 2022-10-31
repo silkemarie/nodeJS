@@ -6,14 +6,16 @@ import Parent from "./components/Parent/Parent.svelte";
   const children = [
     {
       name: "Flemming",
-      blackSheep: true
+      blackSheep: "ultra-blacksheep"
     },
     {
       name: "Erik",
+      blackSheep: "medium-blacksheep",
       brightKid: true
     },
     {
       name: "Ingrid",
+      blackSheep: "not-a-blacksheep",
       isGirl: true,
       brightKid: true
     },
