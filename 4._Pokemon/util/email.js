@@ -2,6 +2,8 @@
 
 "use strict";
 import nodemailer from "nodemailer";
+//pga "type" : "module" kan vi ikke gøre som https://nodemailer.com/about/ skriver
+//i stedet for at bruge require kan vi så bruge import
 
 export default async function handleEmail() {
 
@@ -14,6 +16,7 @@ export default async function handleEmail() {
         }
     });
 
+    //user og pass er generated på https://ethereal.email/create
 
 
 let info = await transporter.sendMail({
@@ -25,11 +28,9 @@ let info = await transporter.sendMail({
   });
 
   console.log("Message sent: %s", info.messageId);
-  // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
 
   // Preview only available when sending through an Ethereal account
   console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
-  // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
 }
 
 handleEmail().catch(console.error);
