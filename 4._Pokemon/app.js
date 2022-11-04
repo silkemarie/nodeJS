@@ -30,6 +30,10 @@ import battleResultsRouter from "./routers/battleResultsRouter.js";
 app.use(battleResultsRouter);
 import contactRouter from "./routers/contactRouter.js";
 app.use(contactRouter);
+import nodemailer from "./util/email.js";
+app.use(nodemailer);
+
+nodemailer();
 
 import { renderPage, injectData } from "./util/templateEngine.js";
 
