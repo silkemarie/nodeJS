@@ -4,14 +4,14 @@ const app = express();
 import path from "path";
 app.use(express.static(path.resolve("../client/dist")));
 
+//noget express json? 
+
 import cors from "cors";
 app.use(cors());
 
-const animals = ["ged", "hest", "ko", "abe"];
-
-app.get("/api/animals", (req, res) => {
-    res.send({ data: animals })
-});
+//vigtigt at cors er før det her
+import animalsRouter from "./routers/animalsRouter.js";
+app.use(animalsRouter);
 
 
 const PORT = 8080 || process.env.PORT;
