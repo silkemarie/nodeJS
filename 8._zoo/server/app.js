@@ -4,7 +4,7 @@ const app = express();
 import path from "path";
 app.use(express.static(path.resolve("../client/dist")));
 
-//noget express json? 
+app.use(express.json());
 
 import cors from "cors";
 app.use(cors());
