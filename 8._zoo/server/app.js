@@ -12,6 +12,11 @@ app.use(cors());
 //vigtigt at cors er før det her
 import animalsRouter from "./routers/animalsRouter.js";
 app.use(animalsRouter);
+import animalFeedTypesRouter from "./routers/animalFeedTypesRouter";
+app.use(animalFeedTypesRouter);
+import animalFeedStockRouter from "./routers/animalFeedStockRouter";
+app.use(animalFeedStockRouter);
+
 
 
 const PORT = 8080 || process.env.PORT;
