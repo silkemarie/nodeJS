@@ -2,13 +2,25 @@
   "name": "server",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "app.js",
   "scripts": {
+    "create-database": "node ./database/ddl_mysql.js",
+    "setup": "concurrently 'npm run create-database' 'echo Database created. Now run npm run start.'",
+    "start": "node app.js",
+    "start-dev": "nodemon.cmd app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.2"
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-crypto": "1.0.5",
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.20",
+    "sqlite": "^4.1.2",
+    "sqlite3": "^5.1.2"
   }
 }
