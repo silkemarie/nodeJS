@@ -1,14 +1,14 @@
-import { Router } from 'express'
-import nodemailer from 'nodemailer'
+import { Router } from 'express';
+import nodemailer from 'nodemailer';
 
 const mailRouter = Router()
 
-mailRouter.post("/api/welcome", async (req, res) => {
+mailRouter.post("/api/waitlist", async (req, res) => {
     console.log(req.body.email)
     const email = req.body.email;
-    return email;
-
-    handleEmail()
+    
+    handleEmail(email)
+   
 })
 
 
@@ -17,17 +17,16 @@ async function handleEmail(email){
         host: 'smtp.ethereal.email',
         port: 587,
         auth: {
-            user: 'pinkie15@ethereal.email',
-            pass: 'KDFAXpr6Rt3H1jJxuu'
+            user: 'santina.bechtelar25@ethereal.email',
+            pass: 'HQvA38tfCHW1VU2dtM'
         }
     });
     
         let info = await transporter.sendMail({
-            from: '"Pinkie Moen" <pinkie15@ethereal.email>',
+            from: '"Santina Bechtelar" <santina.bechtelar25@ethereal.email>',
             to: email,
-            subject: "Hello ✔",
-            text: "Jeg kunne godt bruge en Croissant",
-            html: "<b>Hello world?</b>",
+            subject: "Welcome to our waitlist",
+            text: "We've succesfully signed you up for our waitlist"
           });
     
     

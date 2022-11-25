@@ -18,7 +18,10 @@ to do next:
 
 - implement authentication 
     - read up on session
-    - implement session 
+    - implement session
+        - dog page secret
+        - remember dog 
+            - maybe random list dog instead of api dog? 
 
 - implement authorization
     - use sessions for authorization in backend
@@ -28,6 +31,8 @@ to do next:
     - https://github.com/mefechoel/svelte-navigator/tree/main/example/private-route
 
 - logout function
+
+- design 
 
 
 

@@ -2,8 +2,7 @@
     let mail = "";
     let password = "";
 
-    async function checkEmailAndPas() {
-        console.log("Badabing badabum it works")
+    async function authLogin() {
         const url = 'http://localhost:8080/api/users/login';
         const user = {mail: mail, password: password};
         const response = await fetch(url, {method: "POST", 
@@ -11,7 +10,6 @@
         const data = await response.json()
         if (response.ok) {
             window.location.replace("/dog")
-            console.log("You got it brother man")
             mail = "";
             password = "";
         }
@@ -23,12 +21,16 @@
 
 <img height=300 src="../trans.png">
 
+<br>
+<br>
+
 <form>
-    <h1>Login</h1>
 
-    <input type="email" bind:value={mail} name="email"/>
+    <input id="email" type="email" bind:value={mail} name="email" placeholder="Email"/>
 
-    <input type="password" bind:value={password} name="password"/>
+    <input id="password" type="password" bind:value={password} name="password" placeholder="Password"/>
 
-    <button on:click={checkEmailAndPas} type="button">Login</button>
+    <br>
+    <br>
+    <button on:click={authLogin} type="button">Login</button>
 </form>

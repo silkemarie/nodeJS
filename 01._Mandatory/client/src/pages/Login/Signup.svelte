@@ -1,42 +1,26 @@
 <script>
-
-	import { BASE_URL, global_user } from "../../store/global.js";
-
-
+	import { BASE_URL } from "../../store/global.js";
     import {notifications} from './notifications.js';
 	import Toast from './Toast.svelte';
 
 
-
-
-	function sendData(){
-		sendMail()
-
-	}
-
 	async function sendMail() {
-		console.log("We made it to javascript");
-		const user = {
+		const mail = {
 			// @ts-ignore
 			email: document.getElementById("email").value,
 		};
 
-		let response = await fetch(`${$BASE_URL}/api/welcome`, {
+		await fetch(`${$BASE_URL}/api/waitlist`, {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json;charset=utf-8",
 			},
-			body: JSON.stringify(user),
+			body: JSON.stringify(mail),
 		});
-
-		if (response.ok) {
-			console.log("All is good");
-		}
 	}
-
-
-
 </script>
+
+
 
 <h1>Waitlist</h1>
 <h3>Wanna sign up for our waitlist?</h3>
@@ -51,7 +35,7 @@
 		<input id="email" type="email" name="email" placeholder="Email" />
         <br>
         <br>
-		<button type="submit" on:click={sendData}>Sign up</button>
+		<button type="submit" on:click={sendMail}>Sign up</button>
 	</form>
 
 
