@@ -10,7 +10,7 @@
         headers: {"Content-type": "application/json"}, body: JSON.stringify(user)});
         const data = await response.json()
         if (response.ok) {
-            window.location.replace("/")
+            window.location.replace("/dog")
             console.log("You got it brother man")
             mail = "";
             password = "";

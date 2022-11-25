@@ -13,7 +13,7 @@
     <Link to="/">Home</Link>
     <Link to="/login">Login</Link>
     <Link to="/signup">Waitlist</Link>
-    <Link to="/dog">Dog</Link>
+   
   </nav>
   <div>
       <Route path="/"><Home /></Route>

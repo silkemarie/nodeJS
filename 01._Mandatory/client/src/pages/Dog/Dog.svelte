@@ -1,22 +1,28 @@
 <script>
-   
-
-  
-    let btn = document.getElementById('btnClick')
-    let image = document.getElementById('image')
-
-    btn.addEventListener('click', function () {
-        fetch("https://dog.ceo/api/breeds/image/random")
-        .then(res => res.json())
-        .then(result => {
-            console.log(result)
-            image = result.message
-        })
-        .catch(err=>console.log(err))
-    })
+    import { BASE_URL } from "../../store/global.js";
+ 
+    const fetchImage = (async () => {
+		const response = await fetch('https://dog.ceo/api/breeds/image/random')
+    return await response.json()
+	})()
 
 
 </script>
 
-<h1>Secret page</h1>
+<h1>Your dog</h1>
+{#await fetchImage}
+	<p>...waiting</p>
+{:then data}
+	<img src={data.message} alt="Dog image" />
+{:catch error}
+	<p>An error occurred!</p>
+{/await}
 
+
+
+<p>Todo: should be remembered in session which image </p>
+
+
+<style>
+
+  </style>

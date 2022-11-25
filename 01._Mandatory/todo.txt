@@ -7,31 +7,27 @@
 - login frontend ✓
 - opret / kør db ✓
 - test db ✓
+- test login ✓
+- test mail ✓
+- make notification ✓
+- learn about notifications: github.com/CodeSeven/toastr ✓
 
 
 
 to do next:
-- test login 
-- test mail 
 
-- make notification
-- learn about notifications: github.com/CodeSeven/toastr
-
-- implement authentication ✓
-    - read up on passport.js ✓
-    - implement passport.js as authentication ✓
+- implement authentication 
+    - read up on session
+    - implement session 
 
 - implement authorization
     - use sessions for authorization in backend
     - password should be min. 8 characters, etc. 
 
-- frontend authentication: login/ sign out min. ✓
-    - opt: sign up/forgot password
-
 - if using svelte-navigator use private routes 
     - https://github.com/mefechoel/svelte-navigator/tree/main/example/private-route
 
-- opt: a theme
+- logout function
 
 
 
