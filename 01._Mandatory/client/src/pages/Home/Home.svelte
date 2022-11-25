@@ -1,7 +1,7 @@
 <h1>Hello!</h1>
 <h3> Welcome to E-INU</h3>
 
-<img height=300 src="../public/trans.png">
+<img height=300 src="../trans.png">
 <br>
 <br>
 
@@ -16,3 +16,4 @@
 <br>
 <br>
 <h5>*we assigned it to you. Randomly. No take-backs though. </h5>
+<br>

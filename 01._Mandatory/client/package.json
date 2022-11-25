@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "cors": "^2.8.5",
-    "svelte-navigator": "^3.2.2"
+    "svelte-navigator": "^3.2.2",
+    "toastr": "^2.1.4"
   }
 }

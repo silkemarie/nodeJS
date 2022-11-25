@@ -5,14 +5,14 @@
 - titel ✓
 - lav forside pæn ✓
 - login frontend ✓
+- opret / kør db ✓
+- test db ✓
+
 
 
 to do next:
-- opret / kør db 
-- test db 
 - test login 
 - test mail 
-
 
 - make notification
 - learn about notifications: github.com/CodeSeven/toastr

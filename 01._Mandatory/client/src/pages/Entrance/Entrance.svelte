@@ -1,1 +1,0 @@
-<h1>Get your ticket here</h1>
