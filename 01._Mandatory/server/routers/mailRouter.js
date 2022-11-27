@@ -8,6 +8,7 @@ mailRouter.post("/api/waitlist", async (req, res) => {
     const email = req.body.email;
     
     handleEmail(email)
+    res.send({ message: "mail besked" });
    
 })
 

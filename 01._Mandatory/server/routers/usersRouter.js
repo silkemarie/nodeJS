@@ -14,7 +14,6 @@ router.post("/api/users", async (req, res) => {
 });
 
 
-
 router.post("/api/users/login", async (req, res) => {
     const body = req.body;
     const [rows, fields] = await db.execute(`SELECT * FROM users WHERE mail = ?`, [body.mail]);
@@ -34,6 +33,7 @@ export default router;
 
 
 //https://www.bloggernepal.com/2021/10/authentication-nodejs-bcrypt-express-session-jwt.html 
+
 
 
 /*
