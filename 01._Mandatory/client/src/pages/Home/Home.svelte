@@ -1,3 +1,21 @@
+<script>
+    
+    import { user } from "../../store/auth.js"
+    import { BASE_URL } from "../../store/global.js"
+
+
+        async function logout()  {
+            user.set(null)
+
+            await fetch(`${$BASE_URL}/logout`, {
+                method: "POST",
+            })
+
+            window.location.replace("/")
+        }
+
+</script>
+
 <h1>Hello!</h1>
 <h3> Welcome to E-INU</h3>
 
@@ -17,3 +35,5 @@
 <br>
 <h5>*we assigned it to you. Randomly. No take-backs though. </h5>
 <br>
+
+<button class="navIcon login" id="logout" on:click={logout}>Logout</button>

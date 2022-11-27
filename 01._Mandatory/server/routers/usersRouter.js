@@ -35,5 +35,10 @@ router.get("/api/dogs", async (req, res, next) => {
     });
 })
 
+router.post("/logout", (req, res) => {
+    req.session.destroy()
+    res.send({ message: "out"})
+})
+
 
 export default router;
