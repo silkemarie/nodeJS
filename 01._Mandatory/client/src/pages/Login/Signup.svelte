@@ -1,8 +1,8 @@
 <script>
-   // import toastr from "toastr";
+    import toastr from "toastr";
 	import { BASE_URL } from "../../store/global.js";
     import {notifications} from './notifications.js';
-	//import Toast from './Toast.svelte';
+	import Toast from './Toast.svelte';
     import * as Toastr from "toastr"
     import '../../../node_modules/toastr/build/toastr.css'
 
@@ -45,9 +45,8 @@
 
     <br>
 <br>
-<!--
+
 <button on:click={() => notifications.success("You're the first in line!!", 3000)}>
 	See waitlist
     </button>
     <Toast />
--->

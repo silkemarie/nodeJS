@@ -1,5 +1,12 @@
 <script>
     import { BASE_URL } from "../../store/global.js";
+    
+
+    if(sessionStorage === null) {
+        window.location.replace("/")
+    }
+
+
  
     const fetchImage = (async () => {
 		const response = await fetch('https://dog.ceo/api/breeds/image/random')
