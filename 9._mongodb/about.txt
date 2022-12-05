@@ -1,0 +1,20 @@
+Relational databases vs mongodb
+
+Table   -   Collections
+Row     -   Document
+Columns -   Key
+Cells   -   Value
+
+
+CRUD
+
+SELECT  -   find
+UPDATE  -   updateOne, updateMany ({ search criteria }), { $set { update criteria } })
+INSERT  -   insert, insertOne, insertMany 
+DELETE  -   deleteOne, deleteMany
+
+aggregate functions:
+$gte, $gt, $lt, 
+
+
+få evt resten fra Anders' github
